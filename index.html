@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joice &amp; GLOW — น้ำฝรั่งสกัดเย็น</title>
+<meta name="description" content="100% น้ำฝรั่งสกัดเย็น ไม่ใส่น้ำตาล ติดต่อสั่งซื้อทาง LINE โทร หรือดูที่ตั้งร้าน">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf8f4;
+    --ink:#1c1a17;
+    --grey:#8a857b;
+    --grey-light:#e4e0d8;
+    --blush:#d98c7e;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    min-height:100svh;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Noto Sans Thai','Jost',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px 20px;
+  }
+  .card{
+    width:100%;
+    max-width:380px;
+    text-align:center;
+  }
+
+  /* ---------- seal ---------- */
+  .seal{
+    width:min(62vw,220px);
+    margin:0 auto 22px;
+  }
+  .seal svg{width:100%;height:100%;display:block;}
+  .eyebrow-ring{
+    font-family:'Jost',sans-serif;
+    font-size:11px;
+    letter-spacing:0.3em;
+    fill:var(--grey);
+  }
+
+  .tagline{
+    font-size:15px;
+    color:var(--grey);
+    margin:0 0 8px;
+    letter-spacing:0.01em;
+  }
+  .tagline b{color:var(--ink);font-weight:500;}
+
+  .trust{
+    font-size:12px;
+    color:var(--blush);
+    margin:0 0 26px;
+    letter-spacing:0.01em;
+  }
+
+  /* ---------- care info ---------- */
+  .care{
+    text-align:left;
+    border-top:1px solid var(--grey-light);
+    border-bottom:1px solid var(--grey-light);
+    padding:20px 4px;
+    margin-bottom:28px;
+  }
+  .care-row{
+    display:flex;
+    gap:10px;
+    font-size:13px;
+    line-height:1.55;
+    margin-bottom:8px;
+  }
+  .care-row:last-child{margin-bottom:0;}
+  .care-row b{
+    flex-shrink:0;
+    font-weight:500;
+    color:var(--ink);
+    min-width:76px;
+  }
+  .care-row span{color:var(--grey);}
+
+  /* ---------- buttons ---------- */
+  .buttons{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .btn{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:16px 20px;
+    border:1px solid var(--ink);
+    border-radius:2px;
+    text-decoration:none;
+    color:var(--ink);
+    font-size:16px;
+    font-weight:500;
+    letter-spacing:0.01em;
+    background:transparent;
+    transition:background .15s ease, color .15s ease;
+  }
+  .btn svg{width:22px;height:22px;flex-shrink:0;}
+  .btn .txt{flex:1;text-align:left;}
+  .btn .sub{
+    display:block;
+    font-size:12px;
+    font-weight:400;
+    color:var(--grey);
+    margin-top:2px;
+  }
+  .btn:hover{background:var(--ink);color:var(--cream);}
+  .btn:hover .sub{color:#c9c4b8;}
+  .btn:hover svg{stroke:var(--cream);}
+
+  .btn.primary{
+    background:var(--ink);
+    color:var(--cream);
+  }
+  .btn.primary .sub{color:#c9c4b8;}
+  .btn.primary svg{stroke:var(--cream);}
+  .btn.primary:hover{background:#000;}
+
+  footer{
+    margin-top:34px;
+    font-size:11.5px;
+    color:var(--grey);
+    letter-spacing:0.02em;
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .btn{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="seal" role="img" aria-label="ตราสัญลักษณ์ Joice and Glow">
+    <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="110" cy="110" r="106" fill="none" stroke="var(--ink)" stroke-width="1"/>
+      <path id="ringpath" d="M 110,110 m -86,0 a 86,86 0 1,1 172,0" fill="none" stroke="none"/>
+      <text class="eyebrow-ring">
+        <textPath href="#ringpath" startOffset="50%" text-anchor="middle">COLD PRESSED JUICE</textPath>
+      </text>
+      <text x="110" y="88" text-anchor="middle" font-family="Cormorant, serif" font-style="italic" font-weight="500" font-size="19" fill="var(--ink)">Joice</text>
+      <line x1="82" y1="99" x2="101" y2="99" stroke="var(--grey)" stroke-width="1"/>
+      <text x="110" y="104" text-anchor="middle" font-family="Cormorant, serif" font-size="12" fill="var(--grey)">&amp;</text>
+      <line x1="119" y1="99" x2="138" y2="99" stroke="var(--grey)" stroke-width="1"/>
+      <text x="110" y="152" text-anchor="middle" font-family="Cormorant, serif" font-weight="600" font-size="48" fill="var(--ink)">GLOW</text>
+      <text x="110" y="170" text-anchor="middle" font-family="Jost, sans-serif" font-size="8.5" letter-spacing="2" fill="var(--grey)">GUAVA · グアバ</text>
+    </svg>
+  </div>
+
+  <p class="tagline"><b>100% น้ำฝรั่งสกัดเย็น</b> ไม่ใส่น้ำตาล</p>
+  <p class="trust">ปลูกเอง คั้นเอง ทุกขั้นตอน — ไม่ใช้สารเคมีในสวน</p>
+
+  <div class="buttons">
+
+    <!-- LINE -->
+    <a class="btn primary" href="https://lin.ee/nzgBM5P" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9-.4 1.3-1.2 3.6-1.3 3.9 0 0-.1.4.2.5.3.1.6-.1.6-.1.4-.1 3.2-2.1 4.5-3 .6.1 1.2.1 1.7.1 5.5 0 10-3.6 10-8s-4.5-8-10-8Z"/></svg>
+      <span class="txt">แชททาง LINE<span class="sub">ตอบไว สั่งซื้อ / สอบถามได้ทันที</span></span>
+    </a>
+
+    <!-- CALL -->
+    <a class="btn" href="tel:+66802239452">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+      <span class="txt">โทรสั่งซื้อ<span class="sub">080-223-9452</span></span>
+    </a>
+
+    <!-- LOCATION -->
+    <a class="btn" href="https://maps.app.goo.gl/WtS9sks3WjCTCfqw8" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 22s7-7.4 7-12.5A7 7 0 0 0 5 9.5C5 14.6 12 22 12 22Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+      <span class="txt">ดูที่ตั้งร้าน<span class="sub">เปิดแผนที่ Google Maps</span></span>
+    </a>
+
+  </div>
+
+  <footer>Joice &amp; Glow — เก็บในตู้เย็น เขย่าก่อนดื่มทุกครั้ง</footer>
+
+</div>
+
+</body>
+</html>
